@@ -1,5 +1,6 @@
 .container {
-  width: 1440px;
+  max-width: 1240px;
+  width: 100%;
   margin: 0 auto;
 }
 body {
@@ -7,7 +8,6 @@ body {
 }
 header {
   height: 84px;
-  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,12 +26,29 @@ ul {
   gap: 50px;
 }
 .nav {
-  display: inline-block;
+  display: flex;
 }
-.d1 {
-  display: inline-block;
-  margin-top: 84px;
-  margin-left: 100px;
+.fa-solid {
+  display: none;
+}
+.s1 {
+  height: 606px;
+  background-image: url(../images/bg.png);
+  background-color: aquamarine;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 84px;
+}
+.s2 {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 100px;
+}
+.info {
+  width: 235px;
 }
 .ds {
   color: #636060;
@@ -59,21 +76,22 @@ ul {
   font-weight: 400;
   line-height: normal;
 }
-.di1 {
-  width: 286px;
-  display: inline-block;
-  margin-top: 84px;
-  vertical-align: top;
-  margin-left: 83px;
+.cards {
+  max-width: 924px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 56px;
+  column-gap: 15px;
 }
-.di2 {
+.card {
   width: 286px;
-  display: inline-block;
-  margin-top: 84px;
-  vertical-align: top;
-  margin-left: 33px;
 }
-.st {
+.card img {
+  width: 100%;
+}
+.card h3 {
   color: #343232;
   font-family: Helvetica;
   font-size: 19px;
@@ -83,7 +101,7 @@ ul {
   margin-top: 23px;
   margin-bottom: 9px;
 }
-.bio {
+.card p {
   color: #636060;
   font-family: Helvetica;
   font-size: 18px;
